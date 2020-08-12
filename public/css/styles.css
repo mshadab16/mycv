@@ -838,7 +838,6 @@ footer .social-links a:hover {
     flex: 0 0 100%;
     width: 100%;
     padding: 10px;
-    float: left;
   }
 
   .contact-me .contact-form {
@@ -921,7 +920,10 @@ footer .social-links a:hover {
 
   .home {
     min-height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    background-image: linear-gradient(
+        rgba(3, 169, 244, 0.6),
+        rgba(3, 169, 244, 0.6)
+      ),
       url("../images/mobile.jpg");
     background-size: cover;
     /* background-position: bottom; */
