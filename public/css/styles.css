@@ -124,7 +124,7 @@ header .navbar ul li a.active::before {
   background-image: url("../images/Boat1.jpg");
   background-size: cover;
   background-position: center;
-  padding: 15px;
+  padding: 30px;
 }
 
 .home .full-screen {
@@ -340,7 +340,7 @@ header .navbar ul li a.active::before {
 
 /* --------skills------------- */
 .skills {
-  padding: 100px, 15px;
+  padding: 0 50px;
   background-color: #ffff;
   margin: 100px 0;
 }
@@ -437,8 +437,9 @@ header .navbar ul li a.active::before {
 
 /******Education****/
 .education {
-  padding: 100px 0;
+  padding: 80px;
   background-color: #b3e5fc;
+  display: flex;
 }
 
 .education .education-title {
@@ -693,6 +694,33 @@ footer .social-links a:hover {
   .home .home-content .block h1 {
     font-size: 50px;
   }
+
+  .about .about-content .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .about .about-content .img img {
+    /* width: 100%; */
+    /* display: block; */
+    padding: 200px;
+    width: 100%;
+  }
+
+  .about .about-content .text {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-top: 30px;
+  }
+
+  .skills {
+    margin-top: -20px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -893,8 +921,10 @@ footer .social-links a:hover {
 
   .home {
     min-height: 100vh;
-    background-image: url("../images/Boat1.jpg");
-    background-size: inherit;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("../images/mobile.jpg");
+    background-size: cover;
+    /* background-position: bottom; */
   }
 
   .home .home-content {
