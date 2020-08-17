@@ -21,6 +21,7 @@ html {
 .row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* header */
@@ -340,9 +341,9 @@ header .navbar ul li a.active::before {
 
 /* --------skills------------- */
 .skills {
-  padding: 0 50px;
+  padding: 100px 15px;
   background-color: #ffff;
-  margin: 100px 0;
+  /* margin: 100px 0; */
 }
 
 .skills .skills-content {
@@ -435,9 +436,93 @@ header .navbar ul li a.active::before {
   top: -30px;
 }
 
+/****** Projects *****/
+
+.projects {
+  padding: 100px 15px;
+}
+
+.projects .projects-title h1 {
+  display: inline-block;
+  justify-content: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #03a9f4;
+  margin: 0 0 40px;
+  position: relative;
+}
+
+.projects .projects-title h1:before {
+  content: "";
+  position: absolute;
+  left: 10%;
+  right: 15%;
+  height: 2px;
+  background-color: #b3e5fc;
+  bottom: 0;
+}
+
+.projects .project-item {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 0 15px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.projects .project-item-inner {
+  position: relative;
+  overflow: hidden;
+}
+
+.projects .project-item img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  filter: drop-shadow(80%);
+  transition: all 0.5s ease;
+}
+
+.projects .project-item-inner:hover img {
+  filter: drop-shadow(0);
+  transform: scale(1.1);
+}
+
+.projects .project-item-inner:hover .overlay {
+  background-color: transparent;
+}
+
+.projects .project-item-inner .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+
+.projects .project-item-inner .overlay h4 {
+  font-size: 20px;
+  /* font-weight: 700; */
+  margin: 0;
+  color: #fff;
+  transition: all 0.5s ease;
+  text-transform: capitalize;
+}
+
+.projects .project-item-inner .overlay:hover h4 {
+  transform: translateX(30px);
+  opacity: 0;
+}
+
 /******Education****/
 .education {
-  padding: 80px;
+  padding: 100px 15px;
   background-color: #b3e5fc;
   display: flex;
 }
@@ -627,7 +712,7 @@ header .navbar ul li a.active::before {
 
 /* footer */
 footer {
-  padding: 70px 15px;
+  padding: 100px 15px;
   background-color: #03a9f4;
 }
 
@@ -790,7 +875,7 @@ footer .social-links a:hover {
   .about .about-content .img img {
     width: 100%;
     display: block;
-    padding: 40px;
+    padding: 50px;
   }
 
   .about .about-content .text {
@@ -825,6 +910,13 @@ footer .social-links a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .projects .project-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 15px;
+    margin-bottom: 30px;
   }
 
   .education .education-content {
@@ -1014,6 +1106,17 @@ footer .social-links a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .projects {
+    margin-top: -100px;
+  }
+
+  .projects .project-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+    margin-bottom: 30px;
   }
 
   .education .education-content {
