@@ -122,9 +122,9 @@ header .navbar ul li a.active::before {
 /* -------HOME--------- */
 .home {
   min-height: 100vh;
-  background-image: url("../images/Boat1.jpg");
+  background-image: url("../images/Boat4.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: top right;
   padding: 30px;
 }
 
@@ -997,30 +997,23 @@ footer .social-links a:hover {
     margin: 0;
   }
 
+  .skills {
+    margin-top: -100px;
+  }
+
   .skills .img img {
     /* width: 60%; */
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
+
+  .projects {
+    margin-top: -100px;
+  }
 }
 
 @media (max-width: 360px) {
-  /* .home {
- background-image: url('../images/Barcelona_mobileversion.jpg');
-} */
-
-  .home {
-    min-height: 100vh;
-    background-image: linear-gradient(
-        rgba(3, 169, 244, 0.6),
-        rgba(3, 169, 244, 0.6)
-      ),
-      url("../images/mobile.jpg");
-    background-size: cover;
-    /* background-position: bottom; */
-  }
-
   .home .home-content {
     flex: 0 0 100%;
     max-width: 100%;
@@ -1035,7 +1028,7 @@ footer .social-links a:hover {
     padding-left: 35px;
     border-left: 5px solid #ffff;
     margin-top: 50px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
   }
 
   .home .home-content .block h3 {
